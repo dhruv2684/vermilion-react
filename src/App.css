@@ -127,7 +127,9 @@
 .login-color {
     color: #5dbad1;
 }
-
+.img-box{
+    height: 210px;
+}
 
 
 @media (max-width: 767.98px) {

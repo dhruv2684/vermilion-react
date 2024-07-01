@@ -90,7 +90,7 @@ const Home = () => {
                 return <div className='col-md-4 col-12 pointer' key={index} >
                   <Card onClick={cardd}>
                     <div className="img-box">
-                      <Card.Img variant="top" src={'https://vermilion-node.onrender.com/images/' + el.image} />
+                      <Card.Img variant="top" className='img-box' src={'https://vermilion-node.onrender.com/images/' + el.image} />
                     </div>
                     <Card.Body>
                       <Card.Title className='fs-5'> <img src={mini} width="15%" alt="" />{el.title}</Card.Title>
