@@ -3,7 +3,7 @@ import { ErrorMessage, Field, Formik, Form } from 'formik';
 import { Link, useHistory } from 'react-router-dom';
 import axios from 'axios';
 import * as Yup from "yup";
-import { Col, Container, Row  } from 'react-bootstrap';
+import { Container, Row  } from 'react-bootstrap';
 import logo from '../img/skool-logo-9DCF3E49B3-seeklogo.com.png'
 
 

@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
-import Card from 'react-bootstrap/Card';
+import React from 'react'
+import { Button,  Container } from 'react-bootstrap'
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
@@ -12,19 +11,19 @@ const Header = () => {
     return (
         <div>
             {/* hdr  */}
-            <Navbar expand="lg" className="bg-body-tertiary shadow mb-5" fixed="top">
-                <Container>
-                    <Navbar.Brand href="/"><img src={logo} width="30%" alt="" /><LuChevronsUpDown className='ms-3 up-down' /></Navbar.Brand>
+            <Navbar expand="lg" className='bg-white shadow' fixed="top" >
+                <Container  className=' '>
+                    <Navbar.Brand href="/" className='me-0 logo-box'><img src={logo}  alt="" /><LuChevronsUpDown className='ms-3 up-down' /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="ms-auto">
-                            <Nav.Link href='/user' >
-                                <a className='login-btn '>LOG IN</a>
-                            </Nav.Link>
+                        <Nav className="me-auto"></Nav>
+                        <Nav className="">
+                            <Button href="/user" className='login-btn mt-md-0 mt-3'>LOG IN</Button>{' '}
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
+
         </div>
     )
 }

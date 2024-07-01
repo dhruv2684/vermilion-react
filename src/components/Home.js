@@ -1,19 +1,12 @@
 import React, { useEffect, useState } from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
+import { Container, Row } from 'react-bootstrap'
 import Card from 'react-bootstrap/Card';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import axios from 'axios';
 
-import logo from '../img/skool-logo-9DCF3E49B3-seeklogo.com.png'
-import { LuChevronsUpDown } from "react-icons/lu";
 
 // import { FaSearch } from "react-icons/fa";
 
-import img1 from '../img/1.jpg'
 import mini from '../img/mini.jpg'
-import img2 from '../img/2.jpg'
-import img3 from '../img/7.jpg'
-import axios from 'axios';
 import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 
 const Home = () => {
@@ -39,7 +32,7 @@ const Home = () => {
   const cardd = () => {
     history.push('/')
   }
-
+  
 
   return (
     <div className='bg'>
@@ -53,7 +46,12 @@ const Home = () => {
               <div className='fs-20'>or <a href='/blog' className='blue-col'>Create Your Own</a></div>
 
               <div>
-                <input placeholder="Search for anything" type="text" value="" className='search' />
+                <input
+                  placeholder="Search for anything"
+                  type="search"
+                  value=""
+                  className='search'
+                />
               </div>
             </div>
           </Row>
